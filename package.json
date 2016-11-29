@@ -1,7 +1,7 @@
 {
-  "name": "star-wars-generator",
+  "name": "plain_javascript_modules",
   "version": "1.0.0",
-  "description": "Star wars :)",
+  "description": "Sources for [Modern Frondent Development training](https://github.com/world-direct/Modern_Frontend_Development_Training_Documentation) \r ===\r More Information can found on the [Github Documentation Repository](https://github.com/world-direct/Modern_Frontend_Development_Training_Documentation) for the training event.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/world-direct/Modern_Frontend_Development_Sources.git"
   },
-  "author": "",
+  "author": "mfe and csc",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/world-direct/Modern_Frontend_Development_Sources/issues"
   },
   "homepage": "https://github.com/world-direct/Modern_Frontend_Development_Sources#readme",
   "dependencies": {
-    "random-lastname": "^1.0.1"
+    "bootstrap": "^3.3.7"
   }
 }

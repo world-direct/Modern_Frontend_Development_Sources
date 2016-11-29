@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    </head>
-    <body>
-    <h1>May the force is with you</h1>
-    <span>Your are </span><span id='name'>???</span>
-<button onclick="forceMe()">Force me!!</button>
-    <script  src="bundle.js" type="text/javascript"></script>
-  
-    </body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+    
+    <div class="jumbotron">
+        <h1>Calculation Results</h1>
+
+        <ul>
+            <li>Addition 400 + 100 = <span id="add-result">???</span></li>
+            <li>Multiplication 4 * 8 = <span id="multiplication-result">???</span></li>
+            <li>Modulo 25 % 4 = <span id="modulo-result">???</span></li>
+        </ul>
+<button onclick='calculate()' class="btn btn-primary">Calculate Result</button>
+
+    </div>
+    <script src="logger.js"></script>
+    <script src="calculator.js"></script>
+    <script src="domWriter.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>

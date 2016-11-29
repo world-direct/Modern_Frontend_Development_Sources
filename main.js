@@ -1,11 +1,12 @@
-'use strict';
+var calculate = function () {
+    var addResult = calculator.add(100, 400);
+    domWriter.write('add-result', addResult);
 
-var randomLastname = require("random-lastname");
+    var multiplicationResult = calculator.multiply(4, 8);
+    domWriter.write('multiplication-result', multiplicationResult);
 
-function forceMe(){
-var nameSpan = document.getElementById('name');
-nameSpan.innerHTML = randomLastname() + " " +randomLastname();
-}
+    var moduloResult = calculator.modulo(25, 4);
+    domWriter.write('modulo-result', moduloResult);
+};
 
-forceMe();
-window.forceMe = forceMe;
+// window.calculate = calculate;
