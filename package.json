@@ -1,0 +1,22 @@
+{
+  "name": "star-wars-generator",
+  "version": "1.0.0",
+  "description": "Star wars :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/world-direct/Modern_Frontend_Development_Sources.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/world-direct/Modern_Frontend_Development_Sources/issues"
+  },
+  "homepage": "https://github.com/world-direct/Modern_Frontend_Development_Sources#readme",
+  "dependencies": {
+    "random-lastname": "^1.0.1"
+  }
+}
