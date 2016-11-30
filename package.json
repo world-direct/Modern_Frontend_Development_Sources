@@ -18,5 +18,10 @@
   "homepage": "https://github.com/world-direct/Modern_Frontend_Development_Sources#readme",
   "dependencies": {
     "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "ts-loader": "^1.2.2",
+    "typescript": "^2.0.10",
+    "webpack": "^1.13.3"
   }
 }
