@@ -1,4 +1,7 @@
-var calculate = function () {
+var domWriter = require('domWriter.js');
+var calculator = require('calculator.js');
+
+function calculate() {
     var addResult = calculator.add(100, 400);
     domWriter.write('add-result', addResult);
 
@@ -9,4 +12,6 @@ var calculate = function () {
     domWriter.write('modulo-result', moduloResult);
 };
 
-// window.calculate = calculate;
+exports.calculate = calculate;
+
+document.querySelector("#button").addEventListener("click", calculate);

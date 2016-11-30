@@ -6,7 +6,7 @@
 </head>
 
 <body class="container">
-    
+
     <div class="jumbotron">
         <h1>Calculation Results</h1>
 
@@ -15,13 +15,17 @@
             <li>Multiplication 4 * 8 = <span id="multiplication-result">???</span></li>
             <li>Modulo 25 % 4 = <span id="modulo-result">???</span></li>
         </ul>
-<button onclick='calculate()' class="btn btn-primary">Calculate Result</button>
+        <button id="button" class="btn btn-primary">Calculate Result</button>
 
     </div>
-    <script src="logger.js"></script>
-    <script src="calculator.js"></script>
-    <script src="domWriter.js"></script>
-    <script src="main.js"></script>
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+
+    <script>
+        SystemJS.config({
+            // baseURL: '/js'            
+        });
+        SystemJS.import('main.js');
+    </script>
 </body>
 
 </html>
