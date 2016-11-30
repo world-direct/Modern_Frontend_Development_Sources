@@ -1,11 +1,8 @@
-var logger = function () {
-
-    function logMessage(message) {
+"use strict";
+var logger;
+(function (logger) {
+    function log(message) {
         console.log(message);
     }
-
-    return {
-        log: logMessage
-    }
-
-} ();
+    logger.log = log;
+})(logger = exports.logger || (exports.logger = {}));

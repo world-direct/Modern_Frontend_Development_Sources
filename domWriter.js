@@ -1,13 +1,11 @@
-var domWriter = function () {
-
+"use strict";
+var logger_1 = require('./logger');
+var domWriter;
+(function (domWriter) {
     function write(selector, input) {
-        logger.log("Write " + input + " to inner html of selector " + selector);
+        logger_1.logger.log("Write " + input + " to inner html of selector " + selector);
         var nameSpan = document.getElementById(selector);
         nameSpan.innerHTML = input;
     }
-
-    return{
-        write: write
-    }
-
-}();
+    domWriter.write = write;
+})(domWriter = exports.domWriter || (exports.domWriter = {}));

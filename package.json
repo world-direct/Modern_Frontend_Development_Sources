@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/world-direct/Modern_Frontend_Development_Sources#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "systemjs": "^0.19.41"
   }
 }
