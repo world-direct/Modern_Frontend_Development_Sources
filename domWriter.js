@@ -1,5 +1,4 @@
-var domWriter = function () {
-
+define(['./logger'],function (logger) {
     function write(selector, input) {
         logger.log("Write " + input + " to inner html of selector " + selector);
         var nameSpan = document.getElementById(selector);
@@ -10,4 +9,4 @@ var domWriter = function () {
         write: write
     }
 
-}();
+});

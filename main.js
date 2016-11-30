@@ -1,12 +1,25 @@
-var calculate = function () {
-    var addResult = calculator.add(100, 400);
-    domWriter.write('add-result', addResult);
+define([
+    './domWriter',
+    './logger',
+    './calculator'
+], function (domWriter, logger, calculator) {
 
-    var multiplicationResult = calculator.multiply(4, 8);
-    domWriter.write('multiplication-result', multiplicationResult);
+    var calculate = function () {
 
-    var moduloResult = calculator.modulo(25, 4);
-    domWriter.write('modulo-result', moduloResult);
-};
+        var addResult = calculator.add(100, 400);
+        domWriter.write('add-result', addResult);
 
-// window.calculate = calculate;
+        var multiplicationResult = calculator.multiply(4, 8);
+        domWriter.write('multiplication-result', multiplicationResult);
+
+        var moduloResult = calculator.modulo(25, 4);
+        domWriter.write('modulo-result', moduloResult);
+
+    };
+
+    return {
+        calculate: calculate
+    }
+});
+
+

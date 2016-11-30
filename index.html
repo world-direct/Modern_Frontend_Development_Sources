@@ -15,13 +15,11 @@
             <li>Multiplication 4 * 8 = <span id="multiplication-result">???</span></li>
             <li>Modulo 25 % 4 = <span id="modulo-result">???</span></li>
         </ul>
-<button onclick='calculate()' class="btn btn-primary">Calculate Result</button>
+<button onclick="require('main').calculate()" class="btn btn-primary">Calculate Result</button>
 
     </div>
-    <script src="logger.js"></script>
-    <script src="calculator.js"></script>
-    <script src="domWriter.js"></script>
-    <script src="main.js"></script>
+    <script data-main="main" src="./node_modules/requirejs/require.js"></script>
+  
 </body>
 
 </html>

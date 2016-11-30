@@ -1,4 +1,4 @@
-var logger = function () {
+define([], function () {
 
     function logMessage(message) {
         console.log(message);
@@ -8,4 +8,4 @@ var logger = function () {
         log: logMessage
     }
 
-} ();
+});

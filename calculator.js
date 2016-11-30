@@ -1,5 +1,4 @@
-var calculator = function () {
-
+define(['./logger'], function (logger) {
     function add(summand1, summand2) {
         logger.log("Add " + summand1 + "+" + summand2);
         return summand1 + summand2;
@@ -17,9 +16,9 @@ var calculator = function () {
         return dividend % divisor;
     }
 
-    return  {
+    return  { 
         add: add,
         multiply: multiply,
         modulo: modulo
     }
-}();
+});
