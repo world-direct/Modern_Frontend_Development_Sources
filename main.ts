@@ -15,7 +15,5 @@ module main {
         domWriter.write('modulo-result', moduloResult.toString());
     }
 
-
+    document.querySelector('#button').addEventListener("click", () => calculate());
 }
-
-// window.calculate = calculate;
