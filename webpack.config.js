@@ -35,6 +35,8 @@ var defaultConfig = {
     cache: true,
     debug: true,
     output: {
+        path: './dist',
+        publicPath: 'dist',
         filename: '[name].bundle.js',
         sourceMapFilename: '[name].js.map'
     },
@@ -46,7 +48,7 @@ var defaultConfig = {
 
     devServer: {
         historyApiFallback: true,
-        watchOptions: { aggregateTimeout: 300, poll: 1000 }
+        watchOptions: { aggregateTimeout: 300, poll: 1000 },      
     },
 
     node: {
