@@ -1,0 +1,7 @@
+h1 {
+  .color-lighter(red, 30%);
+}
+
+.color-lighter(@color, @percent: 50%) {
+  color: lighten(@color, @percent);
+}
