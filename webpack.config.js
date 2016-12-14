@@ -6,7 +6,7 @@ var webpackMerge = require('webpack-merge');
 // Webpack Config
 var webpackConfig = {
     entry: {
-        'main': './app/main.ts'
+        'main': './src/app/main.ts'
     },
 
     output: {

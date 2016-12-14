@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app',
+  templateUrl: 'app.template.html', 
+  styleUrls: ['app.style.less']
+})
+export class AppComponent {
+
+  public name: string;
+
+  constructor() {
+    this.name = 'World-Ddadsfasdfasfirect';
+  }
+}
