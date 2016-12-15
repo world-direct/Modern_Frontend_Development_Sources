@@ -1,0 +1,11 @@
+<div class="media">
+    <div class="media-right">
+        <a href="#" *ngIf="repository.ownerAvatarUrl">
+            <img class="media-object  img-rounded" height="50" src="{{repository.ownerAvatarUrl}}" alt="{{repository.name}}">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">{{repository.name}}</h4>
+        {{repository.description}}
+    </div>
+</div>

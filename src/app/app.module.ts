@@ -1,14 +1,20 @@
+
+import { HttpModule }    from '@angular/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { GithubService } from './shared/github.service';
 import { AppComponent } from './app.component';
 import { RepoSearchComponent } from './repoSearch/repoSearch.component';
-import { FormsModule }   from '@angular/forms';
+import {RepositoryTileComponent} from './RepositoryTile/RepositoryTile.component';
+import {RepoListComponent} from './repoList/repoList.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, RepoSearchComponent],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, FormsModule, HttpModule],
+  declarations: [AppComponent, RepoSearchComponent, RepoListComponent, RepositoryTileComponent],
+  bootstrap: [AppComponent],
+  providers: [GithubService]
+
 })
 export class AppModule { }
-  
