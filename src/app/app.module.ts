@@ -10,6 +10,7 @@ import { RepoSearchComponent } from './repoSearch/repoSearch.component';
 import {RepositoryTileComponent} from './RepositoryTile/RepositoryTile.component';
 import {RepoListComponent} from './repoList/repoList.component';
 import { FormsModule } from '@angular/forms';
+import './rxjs-operators';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, ReactiveFormsModule],

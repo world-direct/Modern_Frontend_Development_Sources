@@ -20,8 +20,9 @@ export class RepoSearchComponent implements OnInit {
 	public searchResult: Repository[];
 
 	public ngOnInit(): void {
+
 		this.repoSearchFormControl.valueChanges
-			.debounceTime(250)
+			.debounceTime(250)			
 			.distinctUntilChanged()
 			.switchMap(term => this.githubService.findRepos(term))
 			.subscribe(

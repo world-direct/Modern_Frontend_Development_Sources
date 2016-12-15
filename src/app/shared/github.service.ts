@@ -9,15 +9,17 @@ import 'rxjs/add/operator/map';
 export class GithubService {
 
     constructor(private http: Http) {
-     }
+    }
 
     public findRepos(searchKey: string): Observable<Repository[]> {
 
         if (!searchKey) {
-            // return Observable.create((observer: Observer<Repository[]>) => observer.next(new Array<Repository>()), () => { }, () => { });
-            return Observable.of(new Array<Repository>());        
+            return Observable.create(
+                (observer: Observer<Repository[]>) => observer.next(new Array<Repository>()),
+                () => { },
+                () => { });
+            // return Observable.of(new Array<Repository>());        
         }
- 
         let params = this.githubParams;
         params.set('q', searchKey);
 

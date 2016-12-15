@@ -1,11 +1,10 @@
 import { GithubService } from './shared/github.service';
 import { Component } from '@angular/core';
-import './rxjs-operators';
 
 @Component({
   selector: 'app',
-  templateUrl: 'app.template.html',
-  styleUrls: ['app.style.less'],
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.less'],
   providers: [GithubService]
 
 })

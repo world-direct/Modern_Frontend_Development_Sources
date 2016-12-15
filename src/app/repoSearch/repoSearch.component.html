@@ -1,9 +1,9 @@
 <h3 class="repo-search">Github Repos <span class="badge" *ngIf="searchResult">{{searchResult.length}}</span> </h3>
 
 <div class="input-group ">
-    <input type="text" class="form-control" [formControl]="repoSearchFormControl" placeholder="Search Github Repos...."
+    <input type="text" #githubSearchTextInput class="form-control" [formControl]="repoSearchFormControl" placeholder="Search Github Repos...."
     />
-    <span *ngIf="repoSearchText">Ihre Suche nach {{repoSearchText}} ergab folgende Treffer:</span>
+    <span *ngIf="githubSearchTextInput.value">Ihre Suche nach <b>{{githubSearchTextInput.value}}</b> ergab folgende Treffer:</span>
 </div>
 
 <repo-list [repositories]=searchResult></repo-list>
