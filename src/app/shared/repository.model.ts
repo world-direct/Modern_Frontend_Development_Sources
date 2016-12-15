@@ -11,4 +11,6 @@ export class Repository {
     public watchersCount: number;
     
     public forksCount: number;
+
+    public repositoryUrl: string;
 }

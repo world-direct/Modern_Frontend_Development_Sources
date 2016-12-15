@@ -11,9 +11,5 @@ export class RepositoryTileComponent implements OnInit {
 
 	@Input()
 	public repository : Repository;
-
-	@Input()
-	public nameTest : string;
-
 	ngOnInit() { }
 }

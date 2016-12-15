@@ -1,6 +1,6 @@
 <div class="media">
-    <div class="media-right">
-        <a href="#" *ngIf="repository.ownerAvatarUrl">
+    <div class="media-left">
+        <a   target="_blank" href="{{repository.repositoryUrl}}" *ngIf="repository.ownerAvatarUrl">
             <img class="media-object  img-rounded" height="50" src="{{repository.ownerAvatarUrl}}" alt="{{repository.name}}">
         </a>
     </div>
@@ -8,4 +8,11 @@
         <h4 class="media-heading">{{repository.name}}</h4>
         {{repository.description}}
     </div>
+    <span class="media-right">
+        <a href="#">Watchers <span class="badge">{{repository.watchersCount}}</span></a>
+        <a href="#">Forks <span class="badge">{{repository.forksCount}}</span></a>
+           
+
+    </span>
+    
 </div>

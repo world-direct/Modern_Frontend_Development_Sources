@@ -1,3 +1,4 @@
+import { Observer } from 'rxjs/Observer';
 import { Observable } from 'rxjs/Observable';
 import { Repository } from './repository.model';
 import { Injectable } from '@angular/core';
@@ -7,9 +8,16 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class GithubService {
 
-    constructor(private http: Http) { }
+    constructor(private http: Http) {
+     }
 
     public findRepos(searchKey: string): Observable<Repository[]> {
+
+        if (!searchKey) {
+            // return Observable.create((observer: Observer<Repository[]>) => observer.next(new Array<Repository>()), () => { }, () => { });
+            return Observable.of(new Array<Repository>());        
+        }
+ 
         let params = this.githubParams;
         params.set('q', searchKey);
 
@@ -25,6 +33,7 @@ export class GithubService {
                         owner: repoResult.owner.login,
                         ownerAvatarUrl: repoResult.owner.avatar_url,
                         watchersCount: repoResult.watchers_count,
+                        repositoryUrl: repoResult.html_url
                     });
                 }
                 return repos;
